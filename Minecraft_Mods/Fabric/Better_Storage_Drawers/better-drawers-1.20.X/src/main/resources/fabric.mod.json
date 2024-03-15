@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "betterdrawersmod",
+	"version": "${version}",
+	"name": "Better Drawers",
+	"description": "This is a fabric mod made by Rogue Boone",
+	"authors": [
+		"Rogue Boone!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/better-fabric-drawers/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.boone.betterfabricdrawers.BetterDrawersMod"
+		],
+		"client": [
+			"net.boone.betterfabricdrawers.BetterDrawersModClient"
+		],
+		"fabric-datagen": [
+			"net.boone.betterfabricdrawers.BetterDrawersDataGenerator"
+		]
+	},
+	"mixins": [
+		"better-fabric-drawers.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
